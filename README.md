@@ -4,11 +4,11 @@ Demo-Projekt zum Blog
 [GEDOPLAN](https://javaeeblog.wordpress.com/?p=3870)
 
 
-Thema: Angular Testen mit Karma und Jasmin
+Thema: Angular Testen mit Karma und Jasmine
 Inhalt:
 
   - AngularCLI
-  - Jasmin
+  - Jasmine
   - Karma
 
 
