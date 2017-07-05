@@ -1,7 +1,7 @@
 # Angular Testing
 
 Demo-Projekt zum Blog 
-[GEDOPLAN](https://javaeeblog.wordpress.com/?p=3735)
+[GEDOPLAN](https://javaeeblog.wordpress.com/?p=3870)
 
 
 Thema: Angular Testen mit Karma und Jasmin

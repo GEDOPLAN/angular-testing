@@ -2,6 +2,10 @@
   "name": "angular-testing",
   "version": "0.0.0",
   "license": "MIT",
+  "author": {
+    "name": "Dominik Mathmann, GEDOPLAN",
+    "email": "dominik.mathmann@gedoplan.de"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

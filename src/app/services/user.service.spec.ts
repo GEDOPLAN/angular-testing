@@ -19,7 +19,7 @@ describe('UserService', () => {
   it('should load a least some users', async(inject([UserService], (service: UserService) => {
     expect(service).toBeTruthy();
     service.getUsers().subscribe(r => {
-      expect(r.length).toBeGreaterThan(100);
+      expect(r.length).toBeGreaterThan(5);
     });
   })));
 });

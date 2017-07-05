@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { UserService } from './services/user.service';
 
 @Component({
@@ -9,17 +10,18 @@ import { UserService } from './services/user.service';
 })
 export class AppComponent {
 
+  @ViewChild(NgForm)
+  form: NgForm;
+
   public users: any[];
+
+  private showMaxUserCount: number = 5;
 
   constructor(private userService: UserService) { }
 
-  ngOnInit() {
-    this.loadUser();
-  }
-
   public loadUser() {
     this.userService.getUsers().subscribe(users => {
-      this.users = users;
+      this.users = users.slice(0, this.showMaxUserCount || 5);
     });
   }
 
