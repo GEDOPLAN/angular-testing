@@ -9,6 +9,7 @@
 <div class="container">
   <div class="col-lg-12">
     <h1 class="page-header">Benutzerliste
+      <p class="small" *ngIf="selectedUserId">(Benutzer selektiert: {{selectedUserId}})</p>
     </h1>
   </div>
   <div class="row">
@@ -22,5 +23,5 @@
     </form>
   </div>
 
-  <app-user-list [users]='users'></app-user-list>
+  <app-user-list [users]='users' (onSelect)='selectUser($event)'></app-user-list>
 </div>

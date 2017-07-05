@@ -1,0 +1,9 @@
+
+.portfolio-item{
+    cursor: pointer;
+}
+
+.selecteditm{
+    background-color: rgb(40,96,144);
+    color: white;
+}

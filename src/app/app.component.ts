@@ -15,6 +15,8 @@ export class AppComponent {
 
   public users: any[];
 
+  private selectedUserId: number;
+
   private showMaxUserCount: number = 5;
 
   constructor(private userService: UserService) { }
@@ -23,6 +25,10 @@ export class AppComponent {
     this.userService.getUsers().subscribe(users => {
       this.users = users.slice(0, this.showMaxUserCount || 5);
     });
+  }
+
+  selectUser(user: any) {
+    this.selectedUserId = user.id;
   }
 
 }

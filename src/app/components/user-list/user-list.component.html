@@ -1,4 +1,4 @@
-<div class="col-sm-6 col-md-4 portfolio-item" *ngFor="let user of users">
+<div [class.selecteditm]="selected==user" class="col-sm-6 col-md-4 portfolio-item" *ngFor="let user of users" (click)="select(user)">
   <h2>{{user.username}}</h2>
   <h3>{{user.email}}</h3>
 </div>
