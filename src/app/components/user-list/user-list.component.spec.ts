@@ -25,7 +25,9 @@ describe('UserListComponent', () => {
   });
 
   it('should show unser infos', () => {
-    component.users = USER_DATA;
+    component.users = [
+      {username: 'mocked', mail: 'mocked@mock.de'}
+    ];
 
     fixture.detectChanges();
     const compiled: Element = fixture.debugElement.nativeElement;
