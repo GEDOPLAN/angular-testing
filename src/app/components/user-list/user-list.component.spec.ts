@@ -24,13 +24,13 @@ describe('UserListComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should show unser infos', async(() => {
+  it('should show unser infos', () => {
     component.users = USER_DATA;
 
     fixture.detectChanges();
     const compiled: Element = fixture.debugElement.nativeElement;
 
-    const firstUserName = compiled.querySelectorAll('h2').item(1).innerText;
-    expect(firstUserName).toBe('Antonette');
-  }));
+    const firstUserName = compiled.querySelectorAll('h2').item(0).innerText;
+    expect(firstUserName).toBe('mocked');
+  });
 });
